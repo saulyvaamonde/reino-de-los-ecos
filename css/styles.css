@@ -124,6 +124,7 @@ body {
     margin-top: -350px;
     max-width: 650px;
     width: 90%;
+   
     text-align: right;
     color: #6e5b4d;
     font-size: clamp(1rem,2vw,1.6rem);
