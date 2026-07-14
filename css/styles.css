@@ -10,7 +10,7 @@ body {
 }
 
 .hero {
-   background: url('/imagenes/imagenprincipal.webp');
+   background: url('/imagenes/portada.webp');
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
