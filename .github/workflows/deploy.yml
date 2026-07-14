@@ -25,4 +25,4 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /htdocs  # <--- Creará y subirá todo aquí en Infinityfree
+        server-dir: /htdocs/  # <--- Creará y subirá todo aquí en Infinityfree
