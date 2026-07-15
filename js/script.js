@@ -72,3 +72,4 @@ fondo.style.transform =
 `translate(${x}px, ${y}px) scale(1.08)`;
 
 });
+
