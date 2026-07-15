@@ -16,7 +16,6 @@ body {
  background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
-
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -25,6 +24,84 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+.title-container {
+    position: absolute;
+    inset: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: ce;
+    font-weight: bolder;
+    font-size: 30px;
+   text-align: center;
+   color: #4a3c31; 
+   max-width: 600px;
+   padding: 20px;
+}
+
+.main-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+    margin: 0 15px; 
+    text-transform: uppercase;
+}
+.subtitle-line {
+    max-width: 40px;
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(74, 60, 49, 0.4); 
+}
+
+.divider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.divider-line {
+    width: 80px;
+    height: 1px;
+    background-color: rgba(74, 60, 49, 0.3);
+}
+
+.divider-diamond {
+    text-align: center;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(74, 60, 49, 0.6);
+    transform: rotate(45deg);
+    margin: 0 10px;
+}
+
+.tagline {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(74, 60, 49, 0.8);
+    margin: 0;
 }
 
 .parallax-layer {
@@ -170,6 +247,43 @@ body {
         background-image: url("../imagenes/portada-principal.webp")
       !important;
     }
+
+    .subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.25em;
+        margin: 0 15px; /* Espacio entre el texto y las líneas */
+        text-transform: uppercase;
+    }
+
+    .main-title {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 1.1;
+    }
+
+    .subtitle-line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgba(74, 60, 49, 0.4); 
+        max-width: 80px; 
+    }
+
+    .tagline {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: rgba(74, 60, 49, 0.8);
+        margin: 0;
+    }
+
+
+  
 }
 
 
