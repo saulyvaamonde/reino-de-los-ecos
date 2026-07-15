@@ -376,4 +376,51 @@ body {
     }
     }
     
-    
+
+
+    .lights{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+url("../imagenes/luces1.webp"),
+url("../imagenes/luces2.webp");
+
+background-repeat:repeat;
+
+background-size:900px,1200px;
+
+animation:lightsMove 22s linear infinite;
+
+pointer-events:none;
+
+opacity:.9;
+
+z-index:3;
+
+}
+
+@keyframes lightsMove{
+
+from{
+
+background-position:
+
+0 0,
+0 0;
+
+}
+
+to{
+
+background-position:
+
+0 -300px,
+0 -600px;
+
+}
+
+}
