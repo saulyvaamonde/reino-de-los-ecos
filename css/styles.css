@@ -166,8 +166,7 @@ body {
      @media (min-width: 768px) {
     .hero {
         background-image: url("../imagenes/portada-mobile.webp")
-        center center / cover 
-        no-repeat !important;
+      !important;
     }
 }
 
