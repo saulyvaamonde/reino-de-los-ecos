@@ -20,17 +20,24 @@
         }
 
         .characters-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 15px; }
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          gap: 15px;
+         }
 
         .contenedor-imagenes img {
- 
-    height: auto; 
-    width: 100px;   
-  height: auto; 
-  object-fit: cover;
+          height: auto; 
+         width: 100px;   
+         height: auto; 
+         object-fit: cover;
 }
+
+
+          img:hover  {
+            cursor: pointer;
+            transform: scale(1.1); 
+             opacity: 0.8; 
+          }
     </style>
 
 </head>
@@ -42,11 +49,11 @@
 
             <div class="characters-container">
 
-                <img src="imagenes/lior.webp" alt="Lior" width="200px">
-                <img src="imagenes/lumi.webp" alt="Lumi" width="200px">
-                <img src="imagenes/mira-bibliotecaria.webp" alt="Mira" width="200px">
-                <img src="imagenes/alcalde.webp" alt="Alcalde" width="200px">
-                <img src="imagenes/bran.webp" alt="Bran" width="200px">
+                <img src="imagenes/lior.webp" alt="Lior" width="200px" class="character">
+                <img src="imagenes/lumi.webp" alt="Lumi" width="200px" class="character">
+                <img src="imagenes/mira-bibliotecaria.webp" alt="Mira" width="200px" class="character">
+                <img src="imagenes/alcalde.webp" alt="Alcalde" width="200px" class="character">
+                <img src="imagenes/bran.webp" alt="Bran" width="200px" class="character">
                 
                 
 
