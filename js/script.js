@@ -73,3 +73,43 @@ fondo.style.transform =
 
 });
 
+const leaves = document.querySelector(".leaves");
+
+const images = [
+
+"iamages/hojas1.webp",
+"imagenes/hojas2.webp",
+"imagenes/hojas3.webp"
+
+];
+
+function createLeaf(){
+
+const leaf = document.createElement("img");
+
+leaf.src = images[Math.floor(Math.random()*images.length)];
+
+leaf.classList.add("leaf");
+
+leaf.style.left = Math.random()*100 + "%";
+
+leaf.style.animationDuration =
+(8 + Math.random()*8) + "s";
+
+leaf.style.width =
+(18 + Math.random()*26) + "px";
+
+leaf.style.animationDelay =
+Math.random()*5 + "s";
+
+leaves.appendChild(leaf);
+
+setTimeout(()=>{
+
+leaf.remove();
+
+},17000);
+
+}
+
+setInterval(createLeaf,700);
