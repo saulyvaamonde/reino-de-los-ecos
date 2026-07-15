@@ -6,12 +6,14 @@ body {
     background-color: rgba(192, 218, 253, 0.507);
     margin: 0 auto;
     padding: 0;
+
    
 }
 
 .hero {
-   background: url('../imagenes/portada-principal.webp');
-    background-size: cover;      
+   
+   background-image: url("../imagenes/portada-mobile.webp");
+ background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
 
@@ -28,7 +30,7 @@ body {
 .parallax-layer {
     position: absolute;
     inset: 0;
-    background-image: url("../imagenes/imagenprincipal.webp");
+    
     background-size: cover;
     background-position: center;
     transform: scale(1.08);
@@ -165,7 +167,7 @@ body {
 
      @media (min-width: 768px) {
     .hero {
-        background-image: url("../imagenes/portada-mobile.webp")
+        background-image: url("../imagenes/portada-principal.webp")
       !important;
     }
 }
