@@ -8,10 +8,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <title>Historia 🪄</title>
+
+    <!--estilos-->
+
+    <style>
+
+        .hero {
+            align-items: center;
+            padding: 50px;
+            margin: auto;
+        }
+
+        .characters-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px; }
+
+        .contenedor-imagenes img {
+ 
+    height: auto; 
+    width: 100px;   
+  height: auto; 
+  object-fit: cover;
+}
+    </style>
+
 </head>
 <body>
     <main>
-        
+        <section class="hero">
+
+            <!--primer contenedor de personajes-->
+
+            <div class="characters-container">
+
+                <img src="imagenes/lior.webp" alt="Lior" width="200px">
+                <img src="imagenes/lumi.webp" alt="Lumi" width="200px">
+                <img src="imagenes/mira-bibliotecaria.webp" alt="Mira" width="200px">
+                <img src="imagenes/alcalde.webp" alt="Alcalde" width="200px">
+                <img src="imagenes/bran.webp" alt="Bran" width="200px">
+                
+                
+
+            </div>
+
+            <!--segundo contenedor de personajes-->
+
+            <div class="characters-container">
+
+                <img src="imagenes/guardian-del-bosque.webp" alt="Guardian del Bosque" width="200px">
+                <img src="imagenes/guardian-del-rio.webp" alt="Guardian de Rio" width="200px">
+    
+            </div>
+
+        </section>
     </main>
 </body>
 </html>
