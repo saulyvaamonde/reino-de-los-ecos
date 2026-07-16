@@ -112,3 +112,16 @@ function createLeaf() {
 
 // Crear una hoja cada 800 ms
 setInterval(createLeaf, 800);
+
+
+/*audio time*/
+
+      const audio = document.getElementById("miMusica");
+  const tiempoLimite = 30; 
+
+  audio.addEventListener("timeupdate", function() {
+    if (Math.floor(audio.currentTime) >= tiempoLimite) {
+      audio.pause();
+      audio.currentTime = 0; 
+    }
+  });
