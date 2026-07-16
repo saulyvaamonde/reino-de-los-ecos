@@ -63,14 +63,13 @@ const frases = [
 const fondo = document.querySelector(".parallax-layer");
 
 hero.addEventListener("mousemove", (e)=>{
+    if (!fondo) return;
 
-const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
 
-const y = (e.clientY / window.innerHeight - 0.5) * 20;
-
-fondo.style.transform =
-`translate(${x}px, ${y}px) scale(1.08)`;
-
+    fondo.style.transform =
+    `translate(${x}px, ${y}px) scale(1.08)`;
 });
 
 /*hojas efecto*/
@@ -78,9 +77,9 @@ fondo.style.transform =
 const leavesContainer = document.querySelector(".leaves");
 
 const images = [
-    "../imagenes/hojas1.webp",
-    "../imagenes/hojas2.webp",
-    "../imagenes/hojas3.webp"
+    "imagenes/hojas1.webp",
+    "imagenes/hojas2.webp",
+    "imagenes/hojas3.webp"
 ];
 
 function createLeaf() {
