@@ -85,11 +85,21 @@
 
 
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+          const audio = document.getElementById("miMusica");
+  const tiempoLimite = 30; 
+
+  audio.addEventListener("timeupdate", function() {
+    if (Math.floor(audio.currentTime) >= tiempoLimite) {
+      audio.pause();
+      audio.currentTime = 0; 
+    }
+  });
+    </script>
 
     <!--Sonido musical-->
    
-    <audio id="musica" loop required autoplay>
+    <audio id="musica" loop required autoplay 20s>
     <source src="audio/woodland-fantasy.mp3" type="audio/mpeg">
    </audio>
 </body>
