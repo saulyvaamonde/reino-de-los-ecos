@@ -440,16 +440,15 @@ z-index:4;
 }
 
 
-.leaf{
-
-position:absolute;
-
-top:-120px;
-
-width:32px;
-
-animation:fall linear infinite;
-
+.leaf {
+    position: absolute;
+    top: -120px;
+    width: 32px;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    will-change: transform, opacity;
 }
 
 

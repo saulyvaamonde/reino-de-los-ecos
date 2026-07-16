@@ -75,3 +75,41 @@ fondo.style.transform =
 
 /*hojas efecto*/
 
+const leavesContainer = document.querySelector(".leaves");
+
+const images = [
+    "../imagenes/hojas1.webp",
+    "../imagenes/hojas2.webp",
+    "../imagenes/hojas3.webp"
+];
+
+function createLeaf() {
+    if (!leavesContainer) return;
+
+    const leaf = document.createElement("img");
+    leaf.src = images[Math.floor(Math.random() * images.length)];
+    leaf.classList.add("leaf");
+
+    // Posición inicial y tamaño
+    leaf.style.left = Math.random() * 100 + "vw";
+    leaf.style.width = (20 + Math.random() * 35) + "px";
+    leaf.style.opacity = 0.45 + Math.random() * 0.55;
+
+    // Animación
+    leaf.style.animationName = "fall";
+    leaf.style.animationDuration = (10 + Math.random() * 8) + "s";
+    leaf.style.animationDelay = Math.random() * 2 + "s";
+    leaf.style.animationTimingFunction = "linear";
+    leaf.style.animationIterationCount = "1";
+    leaf.style.animationFillMode = "forwards";
+    leaf.style.willChange = "transform, opacity";
+
+    leavesContainer.appendChild(leaf);
+
+    leaf.addEventListener("animationend", () => {
+        leaf.remove();
+    });
+}
+
+// Crear una hoja cada 800 ms
+setInterval(createLeaf, 800);
