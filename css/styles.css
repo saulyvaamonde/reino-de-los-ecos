@@ -459,18 +459,18 @@ animation:fall linear infinite;
 
 transform:
 
-translateY(-100px)
-translateX(0)
+translateY(-80px)
+translateX(-30px)
 rotate(0deg);
 
-opacity:0;
 
 }
 
-10%{
+25%{
 
-opacity:1;
-
+transform: translateX(-30px)
+translateY(25vh)
+rotate(90deg);
 }
 
 50%{
@@ -478,9 +478,15 @@ opacity:1;
 transform:
 
 translateY(50vh)
-translateX(40px)
+translateX(20px)
 rotate(180deg);
 
+}
+
+75%{
+    transform: translateX(-40px)
+    translateY(75vh)
+    rotate(270deg)
 }
 
 100%{
@@ -488,10 +494,9 @@ rotate(180deg);
 transform:
 
 translateY(110vh)
-translateX(-40px)
+translateX(25px)
 rotate(360deg);
 
-opacity:0;
 
 }
 
