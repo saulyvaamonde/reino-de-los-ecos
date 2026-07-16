@@ -91,7 +91,7 @@ function createLeaf() {
 
     // Posición inicial y tamaño
     leaf.style.left = Math.random() * 100 + "vw";
-    leaf.style.width = (20 + Math.random() * 35) + "px";
+    leaf.style.width = (60 + Math.random() * 70) + "px";
     leaf.style.opacity = 0.45 + Math.random() * 0.55;
 
     // Animación
