@@ -443,7 +443,7 @@ z-index:4;
 .leaf {
     position: absolute;
     top: -120px;
-    width: 60px;
+    width: 80px;
     animation-name: fall;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
