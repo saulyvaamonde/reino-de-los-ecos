@@ -416,6 +416,122 @@ width:180px;
 
 }
 
+
+/*estilos personajes modal*/
+
+
+.character-card{
+
+background:#fefcf7;
+
+border:none;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.character-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+.character-img{
+
+padding:30px;
+
+height:320px;
+
+object-fit:contain;
+
+transition:.4s;
+
+}
+
+.character-card:hover .character-img{
+
+transform:scale(1.05);
+
+}
+
+.character-card h4{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:2rem;
+
+color:#44543f;
+
+}
+
+.character-card p{
+
+color:#777;
+
+margin-bottom:25px;
+
+}
+
+.btn-character{
+
+background:#6d8764;
+
+color:white;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+}
+
+.btn-character:hover{
+
+background:#53694d;
+
+color:white;
+
+}
+
+.section-title{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:3rem;
+
+color:#465847;
+
+}
+
+.section-small{
+
+letter-spacing:3px;
+
+font-size:.8rem;
+
+color:#88947b;
+
+}
+
+.section-text{
+
+max-width:600px;
+
+margin:auto;
+
+color:#666;
+
+}
+
 </style>
 </head>
 
@@ -665,6 +781,224 @@ data-bs-target="#pezModal">
 
 </section>
 
+
+<!-- =========================
+PERSONAJES
+========================== -->
+
+<section id="personajes" class="container py-5">
+
+    <div class="text-center mb-5">
+    
+    <span class="section-small">
+    HABITANTES DEL REINO
+    </span>
+    
+    <h2 class="section-title">
+    Conoce a sus protagonistas
+    </h2>
+    
+    <p class="section-text">
+    Cada uno posee un fragmento de la historia de WhisperValley.
+    </p>
+    
+    </div>
+    
+    <div class="row g-4">
+    
+    <!-- LIOR -->
+    
+    <div class="col-12 col-md-6 col-lg-4">
+    
+    <div class="card character-card">
+    
+    <img src="imagenes/lior.webp"
+    class="card-img-top character-img">
+    
+    <div class="card-body text-center">
+    
+    <h4>Lior</h4>
+    
+    <p>El viajero del eco.</p>
+    
+    <button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#liorModal">
+    
+    Descubrir
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- LUMI -->
+    
+    <div class="col-12 col-md-6 col-lg-4">
+    
+    <div class="card character-card">
+    
+    <img src="imagenes/lumi.webp"
+    class="card-img-top character-img">
+    
+    <div class="card-body text-center">
+    
+    <h4>Lumi</h4>
+    
+    <p>Guardián de los ecos.</p>
+    
+    <button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#lumiModal">
+    
+    Descubrir
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- MIRA -->
+    
+    <div class="col-12 col-md-6 col-lg-4">
+    
+    <div class="card character-card">
+    
+    <img src="imagenes/mira-bibliotecaria.webp"
+    class="card-img-top character-img">
+    
+    <div class="card-body text-center">
+    
+    <h4>Mira</h4>
+    
+    <p>Bibliotecaria del Reino.</p>
+    
+    <button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#miraModal">
+    
+    Descubrir
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- ALDREN -->
+    
+    <div class="col-12 col-md-6 col-lg-4">
+    
+    <div class="card character-card">
+    
+    <img src="imagenes/alcalde.webp"
+    class="card-img-top character-img">
+    
+    <div class="card-body text-center">
+    
+    <h4>Aldren</h4>
+    
+    <p>Alcalde del Valle.</p>
+    
+    <button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#alcaldeModal">
+    
+    Descubrir
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- BRAN -->
+    
+    <div class="col-12 col-md-6 col-lg-4">
+    
+    <div class="card character-card">
+    
+    <img src="imagenes/bran.webp"
+    class="card-img-top character-img">
+    
+    <div class="card-body text-center">
+    
+    <h4>Bran</h4>
+    
+    <p>Herrero del Reino.</p>
+    
+    <button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#branModal">
+    
+    Descubrir
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- GUARDIÁN -->
+    
+    <div class="col-12 col-md-6 col-lg-4">
+    
+    <div class="card character-card">
+    
+    <img src="imagenes/guardian-del-bosque.webp"
+    class="card-img-top character-img">
+    
+    <div class="card-body text-center">
+    
+    <h4>Sylva</h4>
+    
+    <p>Guardián del Bosque.</p>
+    
+    <button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#bosqueModal">
+    
+    Descubrir
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </section>
 
 
 
