@@ -276,6 +276,39 @@ padding-bottom:100px;
 
 }
 
+
+.section-text{
+
+max-width:600px;
+
+margin:auto;
+
+color:#666;
+
+}
+
+
+
+.btn-character{
+
+background:#6d8764;
+
+color:white;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+}
+
+.btn-character:hover{
+
+background:#53694d;
+
+color:white;
+
+}
+
 .section-title span{
 
 letter-spacing:3px;
@@ -417,118 +450,65 @@ width:180px;
 }
 
 
-/*estilos personajes modal*/
+/*=========================
+MODAL
+==========================*/
 
-
-.character-card{
-
-background:#fefcf7;
+.personaje-modal{
 
 border:none;
 
-border-radius:30px;
+border-radius:25px;
 
-overflow:hidden;
+background:#f7f2e8;
 
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-transition:.35s;
-
-height:100%;
+box-shadow:0 25px 50px rgba(0,0,0,.2);
 
 }
 
-.character-card:hover{
+.personaje-modal h3{
 
-transform:translateY(-8px);
+color:#5b4d3b;
 
-box-shadow:0 25px 45px rgba(0,0,0,.15);
+font-family:'Cinzel',serif;
 
 }
 
-.character-img{
+.personaje-modal h5{
 
-padding:30px;
+color:#6b7d54;
 
-height:320px;
+margin-bottom:10px;
 
-object-fit:contain;
+}
+
+.personaje-modal p{
+
+color:#6f6558;
+
+line-height:1.8;
+
+}
+
+.personaje-modal li{
+
+color:#6f6558;
+
+margin-bottom:8px;
+
+}
+
+.personaje-grande{
+
+max-height:420px;
 
 transition:.4s;
 
 }
 
-.character-card:hover .character-img{
+.personaje-grande:hover{
 
 transform:scale(1.05);
-
-}
-
-.character-card h4{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:2rem;
-
-color:#44543f;
-
-}
-
-.character-card p{
-
-color:#777;
-
-margin-bottom:25px;
-
-}
-
-.btn-character{
-
-background:#6d8764;
-
-color:white;
-
-padding:10px 25px;
-
-border-radius:30px;
-
-}
-
-.btn-character:hover{
-
-background:#53694d;
-
-color:white;
-
-}
-
-.section-title{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:3rem;
-
-color:#465847;
-
-}
-
-.section-small{
-
-letter-spacing:3px;
-
-font-size:.8rem;
-
-color:#88947b;
-
-}
-
-.section-text{
-
-max-width:600px;
-
-margin:auto;
-
-color:#666;
 
 }
 
@@ -656,14 +636,20 @@ Conoce a los habitantes del Reino de los Ecos
 
 <div class="container">
 
-<div class="section-title text-center mb-5">
-<span>Habitantes del Reino</span>
-<h2>Conoce a sus protagonistas</h2>
-<p>
-Cada habitante posee una historia, una habilidad única
-y un importante papel dentro del Reino de los Ecos.
-</p>
-</div>
+    <div class="text-center mb-5">
+    
+        <span class="section-small">
+        HABITANTES DEL REINO
+        </span> 
+        
+        <br>
+        
+        <p class="section-text">
+        Cada uno posee un fragmento de la historia de WhisperValley.
+        </p>
+        
+        </div>
+        
 
 <div class="row g-4 justify-content-center">
 
@@ -671,14 +657,24 @@ y un importante papel dentro del Reino de los Ecos.
 <div class="col-lg-4 col-md-6">
 
 <div class="character-card"
-data-bs-toggle="modal"
-data-bs-target="#liorModal">
+>
 
 <img src="../imagenes/lior.webp" alt="Lior">
 
 <h3>Lior</h3>
 
-<span>El Viajero del Eco</span>
+<span>El Viajero del Eco</span> <br>
+
+<button
+class="btn btn-character"
+data-bs-toggle="modal"
+data-bs-target="#liorModal"
+onclick="abrirPersonaje('lior')">
+
+Descubrir
+
+</button>
+
 
 </div>
 
@@ -689,14 +685,23 @@ data-bs-target="#liorModal">
 <div class="col-lg-4 col-md-6">
 
 <div class="character-card"
-data-bs-toggle="modal"
-data-bs-target="#lumiModal">
+>
 
 <img src="../imagenes/lumi.webp" alt="Lumi">
 
 <h3>Lumi</h3>
 
-<span>Guardián del Bosque</span>
+<span>Guardián del Bosque</span> <br>
+
+<button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#lumiModal"
+    onclick="abrirPersonaje('lumi')">
+    
+    Descubrir
+    
+    </button>
 
 </div>
 
@@ -707,14 +712,23 @@ data-bs-target="#lumiModal">
 <div class="col-lg-4 col-md-6">
 
 <div class="character-card"
-data-bs-toggle="modal"
-data-bs-target="#miraModal">
+>
 
 <img src="../imagenes/mira-bibliotecaria.webp" alt="Mira">
 
 <h3>Myra</h3>
 
-<span>Bibliotecaria</span>
+<span>Bibliotecaria</span> <br>
+
+<button
+    class="btn btn-character"
+    data-bs-toggle="modal"
+    data-bs-target="#miraModal"
+    onclick="abrirPersonaje('mira')">
+    
+    Descubrir
+    
+    </button>
 
 </div>
 
@@ -726,14 +740,23 @@ data-bs-target="#miraModal">
 <div class="col-lg-4 col-md-6">
 
 <div class="character-card"
-data-bs-toggle="modal"
-data-bs-target="#mayorModal">
+>
 
 <img src="../imagenes/alcalde.webp" alt="Aldren">
 
 <h3>Aldren</h3>
 
-<span>Alcalde</span>
+<span>Alcalde</span> <br>
+
+<button
+class="btn btn-character"
+data-bs-toggle="modal"
+data-bs-target="#alcaldeModal"
+onclick="abrirPersonaje('aldren')">
+
+Descubrir
+
+</button>
 
 </div>
 
@@ -744,14 +767,23 @@ data-bs-target="#mayorModal">
 <div class="col-lg-4 col-md-6">
 
 <div class="character-card"
-data-bs-toggle="modal"
-data-bs-target="#robotModal">
+>
 
 <img src="../imagenes/guardian-del-bosque.webp" alt="Orun">
 
 <h3>Orun</h3>
 
-<span>Guardián del Bosque</span>
+<span>Guardián del Bosque</span> <br>
+
+<button
+class="btn btn-character"
+data-bs-toggle="modal"
+data-bs-target="#robotModal"
+onclick="abrirPersonaje('guardianBosque')">
+
+Descubrir
+
+</button>
 
 </div>
 
@@ -762,14 +794,23 @@ data-bs-target="#robotModal">
 <div class="col-lg-4 col-md-6">
 
 <div class="character-card"
-data-bs-toggle="modal"
-data-bs-target="#pezModal">
+>
 
 <img src="../imagenes/guardian-del-rio.webp" alt="Aqua">
 
 <h3>Aqua</h3>
 
-<span>Guardián del Río</span>
+<span>Guardián del Río</span> <br>
+
+<button
+class="btn btn-character"
+data-bs-toggle="modal"
+data-bs-target="#pezModal"
+onclick="abrirPersonaje('guardianRio')">
+
+Descubrir
+
+</button>
 
 </div>
 
@@ -783,212 +824,49 @@ data-bs-target="#pezModal">
 
 
 <!-- =========================
-PERSONAJES
+MODAL PERSONAJES
 ========================== -->
 
-<section id="personajes" class="container py-5">
-
-    <div class="text-center mb-5">
+<div class="modal fade" id="characterModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
     
-    <span class="section-small">
-    HABITANTES DEL REINO
-    </span>
+    <div class="modal-content personaje-modal">
     
-    <h2 class="section-title">
-    Conoce a sus protagonistas
-    </h2>
+    <div class="modal-header border-0">
     
-    <p class="section-text">
-    Cada uno posee un fragmento de la historia de WhisperValley.
-    </p>
-    
-    </div>
-    
-    <div class="row g-4">
-    
-    <!-- LIOR -->
-    
-    <div class="col-12 col-md-6 col-lg-4">
-    
-    <div class="card character-card">
-    
-    <img src="imagenes/lior.webp"
-    class="card-img-top character-img">
-    
-    <div class="card-body text-center">
-    
-    <h4>Lior</h4>
-    
-    <p>El viajero del eco.</p>
+    <h3 id="modalTitulo" class="modal-title"></h3>
     
     <button
-    class="btn btn-character"
-    data-bs-toggle="modal"
-    data-bs-target="#liorModal">
-    
-    Descubrir
-    
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="modal">
     </button>
     
     </div>
     
-    </div>
+    <div class="modal-body">
+    
+    <div class="row align-items-center">
+    
+    <div class="col-lg-5 text-center">
+    
+    <img
+    id="modalImagen"
+    class="img-fluid personaje-grande">
     
     </div>
     
+    <div class="col-lg-7">
     
+    <h5>Historia</h5>
     
-    <!-- LUMI -->
+    <p id="modalHistoria"></p>
     
-    <div class="col-12 col-md-6 col-lg-4">
+    <hr>
     
-    <div class="card character-card">
+    <h5>Habilidades</h5>
     
-    <img src="imagenes/lumi.webp"
-    class="card-img-top character-img">
-    
-    <div class="card-body text-center">
-    
-    <h4>Lumi</h4>
-    
-    <p>Guardián de los ecos.</p>
-    
-    <button
-    class="btn btn-character"
-    data-bs-toggle="modal"
-    data-bs-target="#lumiModal">
-    
-    Descubrir
-    
-    </button>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    
-    
-    <!-- MIRA -->
-    
-    <div class="col-12 col-md-6 col-lg-4">
-    
-    <div class="card character-card">
-    
-    <img src="imagenes/mira-bibliotecaria.webp"
-    class="card-img-top character-img">
-    
-    <div class="card-body text-center">
-    
-    <h4>Mira</h4>
-    
-    <p>Bibliotecaria del Reino.</p>
-    
-    <button
-    class="btn btn-character"
-    data-bs-toggle="modal"
-    data-bs-target="#miraModal">
-    
-    Descubrir
-    
-    </button>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    
-    
-    <!-- ALDREN -->
-    
-    <div class="col-12 col-md-6 col-lg-4">
-    
-    <div class="card character-card">
-    
-    <img src="imagenes/alcalde.webp"
-    class="card-img-top character-img">
-    
-    <div class="card-body text-center">
-    
-    <h4>Aldren</h4>
-    
-    <p>Alcalde del Valle.</p>
-    
-    <button
-    class="btn btn-character"
-    data-bs-toggle="modal"
-    data-bs-target="#alcaldeModal">
-    
-    Descubrir
-    
-    </button>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    
-    
-    <!-- BRAN -->
-    
-    <div class="col-12 col-md-6 col-lg-4">
-    
-    <div class="card character-card">
-    
-    <img src="imagenes/bran.webp"
-    class="card-img-top character-img">
-    
-    <div class="card-body text-center">
-    
-    <h4>Bran</h4>
-    
-    <p>Herrero del Reino.</p>
-    
-    <button
-    class="btn btn-character"
-    data-bs-toggle="modal"
-    data-bs-target="#branModal">
-    
-    Descubrir
-    
-    </button>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    
-    
-    <!-- GUARDIÁN -->
-    
-    <div class="col-12 col-md-6 col-lg-4">
-    
-    <div class="card character-card">
-    
-    <img src="imagenes/guardian-del-bosque.webp"
-    class="card-img-top character-img">
-    
-    <div class="card-body text-center">
-    
-    <h4>Sylva</h4>
-    
-    <p>Guardián del Bosque.</p>
-    
-    <button
-    class="btn btn-character"
-    data-bs-toggle="modal"
-    data-bs-target="#bosqueModal">
-    
-    Descubrir
-    
-    </button>
+    <ul id="modalHabilidades"></ul>
     
     </div>
     
@@ -998,7 +876,8 @@ PERSONAJES
     
     </div>
     
-    </section>
+    </div>
+    </div>
 
 
 
