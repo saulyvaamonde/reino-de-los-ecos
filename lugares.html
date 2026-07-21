@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Historia | Whisper Valley</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="css/styles.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lora:wght@400;500&display=swap"
+rel="stylesheet">
+
+<style>
+
+    .navbar {
+ background: rgba(255, 255, 255, 0.178);
+display: inline-block;
+padding: 12px 24px;
+backdrop-filter: blur(6px);
+font-weight: bold;
+    }
+
+.hero-lugares{
+
+min-height:70vh;
+
+background:url("imagenes/mapa-portada.webp");
+
+background-size:cover;
+
+background-position:center;
+
+position:relative;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.hero-lugares::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 248, 236, 0.226);
+}
+
+.hero-content{
+
+margin:auto;
+
+text-align:center;
+
+position:relative;
+
+z-index:2;
+padding:20px;
+background: rgba(255, 255, 255, 0.096);
+display: inline-block;
+padding: 12px 14px;
+border-radius: 30px;
+backdrop-filter: blur(6px);
+font-weight: bold;
+
+}
+
+.hero-content h1{
+
+font-family:"Cinzel",serif;
+
+font-size:3rem;
+font-weight: bold;
+color:#5a4635;
+
+}
+
+.hero-content p{
+
+font-size:1.2rem;
+color:#5d4b39;
+font-weight: bold;
+}
+
+
+.logo{
+
+height:85px;
+
+}
+
+
+
+.footer{
+
+background:#dde6d3;
+
+padding:30px;
+
+text-align:center;
+
+color:#5b5b5b;
+
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:2.5rem;
+
+}
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header class="hero-lugares">
+
+<div class="overlay"></div>
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+<a class="navbar-brand"
+href="index.html">
+
+<img
+src="imagenes/simbolo.webp"
+class="logo">
+
+</a>
+
+<button
+class="navbar-toggler"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse justify-content-center"
+
+id="menu">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link"
+href="index.html">
+Inicio
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="personajes.html">
+Personajes
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active"
+href="historia.html">
+Historia
+</a>
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link active"
+    href="lugares.html">
+    Lugares
+    </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link active"
+        href="">
+        Galería
+        </a>
+        </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>LOS LUGARES DEL REINO</h1>
+
+<p>
+
+    Cada sendero guarda una historia esperando ser descubierta.
+
+</p>
+
+</div>
+
+</header>
+
+
+
+<footer class="footer">
+
+    <p>
+    
+    © 2026 Whisper Valley · El Reino de los Ecos
+    
+    </p>
+    
+    </footer>
+
+
+    
+
+
+    
+
+
+        <!--<div class="hero-content">
+        
+        <h1>LOS LUGARES DEL REINO</h1>
+        
+        <p>
+        Cada sendero guarda una historia esperando ser descubierta.
+        </p>
+        
+        </div>
+        
+        </section>
+        
+        
+        
+        
+        <section class="container py-5">
+        
+        <div class="text-center mb-5">
+        
+        <h2 class="titulo-seccion">
+        Explora Whisper Valley
+        </h2>
+        
+        <p class="subtitulo">
+        Desde antiguos bosques hasta montañas sagradas.
+        </p>
+        
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+        
+        
+        <div class="col-lg-4 col-md-6">
+        
+        <div class="place-card">
+        
+        <img src="imagenes/valle.webp"
+        class="img-fluid">
+        
+        <h3>Valle del Primer Eco</h3>
+        
+        <p>
+        Lugar donde comienza la aventura de Lior.
+        </p>
+       
+        </div>
+        
+        </div>
+        
+        
+        
+        <div class="col-lg-4 col-md-6">
+        
+        <div class="place-card">
+        
+        <img src="imagenes/pueblo.webp"
+        class="img-fluid">
+        
+        <h3>Whisper Valley</h3>
+        
+        <p>
+        El corazón del reino.
+        </p>
+      
+        
+        </div>
+        
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-6">
+        
+        <div class="place-card">
+        
+        <img src="imagenes/bosque.webp"
+        class="img-fluid">
+        
+        <h3>Bosque de los Susurros</h3>
+        
+        <p>
+        Un bosque donde los árboles recuerdan el pasado.
+        </p>
+     
+        
+        </div>
+        
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-6">
+        
+        <div class="place-card">
+        
+        <img src="imagenes/biblioteca.webp"
+        class="img-fluid">
+        
+        <h3>Biblioteca Ancestral</h3>
+        
+        <p>
+        Miles de manuscritos conservan la memoria del reino.
+        </p>
+       
+        
+        </div>
+        
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="place-card">
+            
+            <img src="imagenes/rio.webp"
+            class="img-fluid">
+            
+            <h3>Río de la Memoria</h3>
+            
+            <p>
+            Las aguas muestran recuerdos olvidados.
+            </p>
+          
+            
+            </div>
+            
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-6">
+            
+            <div class="place-card">
+            
+            <img src="imagenes/montanas.webp"
+            class="img-fluid">
+            
+            <h3>Montañas del Eco</h3>
+            
+            <p>
+            El punto más alto de Whisper Valley.
+            </p>
+           
+            
+            </div>
+            
+            </div>
+            
+            </div>
+            
+            </section>
+
+        <footer class="footer">
+
+            <p>
+            
+            © 2026 Whisper Valley · El Reino de los Ecos
+            
+            </p>
+            
+            </footer>-->
+
+</body>
+</html>
