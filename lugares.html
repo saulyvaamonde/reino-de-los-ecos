@@ -221,6 +221,63 @@ color:#777;
 
 }
 
+
+/*==========================
+MAPA
+==========================*/
+
+.btn-map{
+
+background:#89a36c;
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+padding:12px 32px;
+
+transition:.3s;
+
+}
+
+.btn-map:hover{
+
+background:#6f8854;
+
+color:white;
+
+}
+
+.mapa-modal{
+
+background:#fbf7ee;
+
+border-radius:25px;
+
+border:2px solid #d5c18d;
+
+}
+
+.mapa-modal .modal-title{
+
+font-family:"Cinzel",serif;
+
+color:#5f6b48;
+
+}
+
+.mapa-img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
 .footer{
 
 background:#dde6d3;
@@ -345,6 +402,16 @@ Historia
         <p class="subtitulo">
         Desde antiguos bosques hasta montañas sagradas.
         </p>
+
+        <button
+class="btn btn-map"
+data-bs-toggle="modal"
+data-bs-target="#mapaModal">
+
+🗺️ Ver mapa
+
+</button>
+
         
         </div>
         
@@ -419,14 +486,44 @@ Historia
 
 
     
+<!-- Modal Mapa -->
 
+<div class="modal fade"
+id="#mapaModal"
+tabindex="-1">
 
-    
+<div class="modal-dialog modal-xl modal-dialog-centered">
 
+<div class="modal-content mapa-modal">
 
-   
-        
-       
+<div class="modal-header border-0">
+
+<h4 class="modal-title">
+Mapa de Whisper Valley
+</h4>
+
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body text-center">
+
+<img
+src="imagenes/mapapueblo.webp"
+alt="Mapa de Whisper Valley"
+class="img-fluid mapa-img">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 
 </body>
