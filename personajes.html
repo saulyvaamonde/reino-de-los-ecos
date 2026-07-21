@@ -449,30 +449,101 @@ width:180px;
 
 }
 
-/*ESTILOS MODAL*/
 
-.modal-content{
-background:#fdfcf7;
-border-radius:25px;
+
+/* Modal */
+.personaje-modal{
+background: linear-gradient(
+180deg,
+#f9f4e7 0%,
+#f4ecd9 100%
+);
+
+border: 2px solid #cdbb84;
+border-radius: 24px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.18),
+inset 0 0 0 2px rgba(255,255,255,.45);
+
+background-image:
+radial-gradient(circle at top left,
+rgba(255,255,255,.35),
+transparent 45%);
 }
 
+/* Cabecera */
+.modal-header{
+border-bottom: 1px solid rgba(184,160,92,.35);
+background: transparent;
+}
+
+/* Pie */
+.modal-footer{
+border-top: 1px solid rgba(184,160,92,.35);
+background: transparent;
+}
+
+/* Título */
 .modal-title{
-color:#5c6f53;
-font-family:"Cinzel", serif;
+font-family: "Cinzel", serif;
+color:#6f5b2c;
+font-size:2rem;
+letter-spacing:1px;
 }
 
+/* Subtítulos */
 .modal-body h5{
-color:#6b8062;
+color:#7c6b3f;
 margin-bottom:10px;
 }
 
+/* Texto */
 .modal-body p{
-color:#666;
+color:#555;
 line-height:1.8;
+text-align:justify;
+}
+
+/* Lista */
+.modal-body ul{
+padding-left:20px;
 }
 
 .modal-body li{
+color:#666;
 margin-bottom:8px;
+}
+
+/* Botón cerrar */
+.btn-character{
+background:#8ca26c;
+color:white;
+border:none;
+border-radius:30px;
+padding:.6rem 1.8rem;
+transition:.3s;
+}
+
+.btn-character:hover{
+background:#75895b;
+}
+
+.modal-content{
+animation: aparecer .45s ease;
+}
+
+@keyframes aparecer{
+
+0%{
+opacity:0;
+transform:translateY(40px) scale(.95);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+}
 }
 
 
