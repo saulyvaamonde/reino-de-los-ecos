@@ -116,7 +116,19 @@ setInterval(createLeaf, 800);
 
 /*audio time*/
 
-      const audio = document.getElementById("miMusica");
+const audio = document.getElementById("miMusica");
+const tiempoLimite = 30;
+
+if (audio) {
+audio.addEventListener("timeupdate", function () {
+if (audio.currentTime >= tiempoLimite) {
+audio.pause();
+audio.currentTime = 0;
+}
+});
+}
+
+     /* const audio = document.getElementById("miMusica");
   const tiempoLimite = 30; 
 
   audio.addEventListener("timeupdate", function() {
@@ -124,7 +136,7 @@ setInterval(createLeaf, 800);
       audio.pause();
       audio.currentTime = 0; 
     }
-  });
+  });*/
 
   /*cookies*/
 
