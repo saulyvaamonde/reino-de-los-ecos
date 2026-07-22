@@ -128,27 +128,37 @@ setInterval(createLeaf, 800);
 
   /*cookies*/
 
-  const banner = document.getElementById("cookie-banner");
+  document.addEventListener("DOMContentLoaded", () => {
 
-  if (localStorage.getItem("cookiesAccepted")) {
-  banner.style.display = "none";
-
-gtag('consent', 'update', {
-    analytics_storage: 'granted'
+    const banner = document.getElementById("cookie-banner");
+    const boton = document.getElementById("acceptCookies");
+    
+    if (!banner || !boton) return;
+    
+    // Si ya aceptó las cookies
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+    banner.style.display = "none";
+    
+    if (typeof gtag === "function") {
+    gtag("consent", "update", {
+    analytics_storage: "granted"
     });
-}
-
-
-  
-  document.getElementById("acceptCookies").onclick = function () {
-  
-  localStorage.setItem("cookiesAccepted", "true");
-  
- gtag('consent', 'update', {
-    analytics_storage: 'granted'
+    }
+    }
+    
+    boton.addEventListener("click", () => {
+    
+    localStorage.setItem("cookiesAccepted", "true");
+    
+    banner.style.display = "none";
+    
+    if (typeof gtag === "function") {
+    gtag("consent", "update", {
+    analytics_storage: "granted"
     });
-
-  banner.style.display = "none";
-  };
-
+    }
+    
+    });
+    
+    });
   
