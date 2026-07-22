@@ -132,11 +132,19 @@ setInterval(createLeaf, 800);
 
   if(localStorage.getItem("cookiesAccepted")){
   banner.style.display="none";
+
+  gtag('consent','update', {
+    analytics_storage:'granted'
+  });
   }
   
   document.getElementById("acceptCookies").onclick=function(){
   
   localStorage.setItem("cookiesAccepted","true");
+
+  gtag('consent','update', {
+    analytics_storage:'granted'
+  });
   
   banner.style.display="none";
   
