@@ -130,24 +130,23 @@ setInterval(createLeaf, 800);
 
   const banner = document.getElementById("cookie-banner");
 
-  if(localStorage.getItem("cookiesAccepted")) {
-  banner.style.display="none";
-
-  gtag('consent','update', {
-    analytics_storage:'granted'
+  if (localStorage.getItem("cookiesAccepted")) {
+  banner.style.display = "none";
+  
+  gtag('consent', 'update', {
+  analytics_storage: 'granted'
   });
   }
   
-  document.getElementById("acceptCookies").onclick = function() {
+  document.getElementById("acceptCookies").onclick = function () {
   
-  localStorage.setItem("cookiesAccepted","true");
-
-  gtag('consent','update', {
-    analytics_storage:'granted'
+  localStorage.setItem("cookiesAccepted", "true");
+  
+  gtag('consent', 'update', {
+  analytics_storage: 'granted'
   });
   
   banner.style.display = "none";
-  
   };
 
   
