@@ -130,7 +130,7 @@ setInterval(createLeaf, 800);
 
   const banner = document.getElementById("cookie-banner");
 
-  if(localStorage.getItem("cookiesAccepted")){
+  if(localStorage.getItem("cookiesAccepted")) {
   banner.style.display="none";
 
   gtag('consent','update', {
@@ -138,7 +138,7 @@ setInterval(createLeaf, 800);
   });
   }
   
-  document.getElementById("acceptCookies").onclick=function(){
+  document.getElementById("acceptCookies").onclick = function() {
   
   localStorage.setItem("cookiesAccepted","true");
 
@@ -146,8 +146,8 @@ setInterval(createLeaf, 800);
     analytics_storage:'granted'
   });
   
-  banner.style.display="none";
+  banner.style.display = "none";
   
-  }
+  };
 
   
