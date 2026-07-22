@@ -886,12 +886,13 @@ data-bs-target="#mapaModal">
     personajes, lugares, ilustraciones y capítulos de la historia.
     </p>
     
-    <form class="row g-3 justify-content-center">
+    <form class="row g-3 justify-content-center" action="https://formspree.io/f/xlgzykwp" method="post">
     
     <div class="col-lg-5 col-md-8">
     
     <input
     type="text"
+    name="nombre"
     class="form-control"
     placeholder="Tu nombre"
     required>
@@ -902,6 +903,7 @@ data-bs-target="#mapaModal">
     
     <input
     type="email"
+    name="email"
     class="form-control"
     placeholder="Correo electrónico"
     required>
@@ -912,7 +914,7 @@ data-bs-target="#mapaModal">
     
     <button class="btn btn-newsletter"
     data-bs-toggle="modal"
-data-bs-target="#newsletterModal">
+data-bs-target="#newsletterModal" type="submit">
     
     Unirme al Reino
     
