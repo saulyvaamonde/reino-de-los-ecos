@@ -501,401 +501,92 @@ rotate(360deg);
 
 }
 
-/*pagina de personajes
-
-
-:root{
-
---verde:#8E9C74;
-
---verde2:#C8D1B6;
-
---beige:#F7F1E6;
-
---crema:#FDFBF8;
-
---marron:#5A4635;
-
-}
-
-.characters-page{
-
-font-family:"Lora",serif;
-
-background:#FDFBF8;
-
-overflow-x:hidden;
-
-}
-
-/* HERO 
-
-.hero-personajes{
-
-position:relative;
-
-min-height:100vh;
-
-background:url("imagenes/portada2.webp");
-
-background-size:cover;
-
-background-position:center;
-
-overflow:hidden;
-
-display:flex;
-
-flex-direction:column;
-
-}
-
-.overlay{
-
-position:absolute;
-
-inset:0;
-
-background:rgba(255,250,242,.30);
-
-backdrop-filter:blur(2px);
-
-}
-
-.hero-content{
-
-position:relative;
-
-z-index:20;
-
-margin:auto;
-
-text-align:center;
-
-padding:120px 20px;
-
-}
-
-.hero-content h1{
-
-font-family:"Cinzel",serif;
-
-font-size:70px;
-
-letter-spacing:4px;
-
-color:#5A4635;
-
-}
-
-.hero-content p{
-
-margin-top:20px;
-
-font-size:22px;
-
-color:#6A5B4B;
-
-}
-
-.decoracion{
-
-margin:auto;
-
-margin-top:30px;
-
-width:160px;
-
-height:2px;
-
-background:#B4B28A;
-
-position:relative;
-
-}
-
-.decoracion::before{
-
-content:"❈";
-
-position:absolute;
-
-left:50%;
-
-top:-14px;
-
-transform:translateX(-50%);
-
-color:#8E9C74;
-
-font-size:22px;
-
-}
-
-/* NAVBAR 
-
-.navbar{
-
-z-index:30;
-
-padding-top:25px;
-
-font-weight: bold;
-
-
-}
-
-.logo{
-
-height:85px;
-
-}
-
-.nav-link{
-
-font-family:"Cinzel";
-
-margin:0 12px;
-
-color:#5A4635!important;
-
-font-size:15px;
-
-transition:.4s;
-
-}
-
-.nav-link:hover{
-
-color:#8E9C74!important;
-
-}
-
-.nav-link.active{
-
-color:#8E9C74!important;
-
-}
-
-/* TITULO 
-
-.titulo-seccion{
-
-text-align:center;
-
-margin-top:30px;
-
-margin-bottom:50px;
-
-}
-
-.titulo-seccion h2{
-
-font-family:"Cinzel";
-
-letter-spacing:2px;
-
-font-size:42px;
-
-color:#5A4635;
-
-}
-
-@media(max-width:991px){
-
-.hero-content h1{
-
-font-size:52px;
-
-}
-
-.hero-content p{
-
-font-size:18px;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.hero-content{
-
-padding-top:170px;
-
-}
-
-.hero-content h1{
-
-font-size:42px;
-
-}
-
-.hero-content p{
-
-font-size:16px;
-
-}
-
-.logo{
-
-height:45px;
-
-}
-
-}
-
-
-.characters{
-
-background:#eef5ea;
-
-position:relative;
-
-overflow:hidden;
-
-padding-top:90px;
-
-padding-bottom:100px;
-
-}
-
-.section-title span{
-
-letter-spacing:3px;
-
-font-size:.85rem;
-
-text-transform:uppercase;
-
-color:#7f9472;
-
-}
-
-.section-title h2{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:3rem;
-
-color:#38402f;
-
-margin-top:15px;
-
-}
-
-.section-title p{
-
-max-width:650px;
-
-margin:auto;
-
-margin-top:20px;
-
-color:#6f7369;
-
-line-height:1.8;
-
-
-
-}
-
-.character-card{
-
-background:white;
-
-border-radius:28px;
-
-padding:35px;
-
-text-align:center;
-
-cursor:pointer;
-
-transition:.35s;
-
-height:100%;
-
-box-shadow:
-
-0 15px 40px rgba(0,0,0,.08);
-
-}
-
-.character-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 25px 60px rgba(0,0,0,.12);
-
-}
-
-.character-card img{
-
-width:220px;
-
-max-width:100%;
-
-transition:.4s;
-
-}
-
-.character-card:hover img{
-
-transform:scale(1.08);
-
-}
-
-.character-card h3{
-
-margin-top:25px;
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:2rem;
-
-color:#4b523d;
-
-}
-
-.character-card span{
-
-display:block;
-
-margin-top:8px;
-
-color:#8a8e82;
-
-font-size:.95rem;
-
-letter-spacing:1px;
-
-}
-
-span{
-    font-weight: bold;
-}
-
-@media(max-width:768px){
-
-.section-title h2{
-
-font-size:2.4rem;
-
-}
-
-.character-card{
-
-padding:25px;
-
-}
-
-.character-card img{
-
-width:180px;
-
-}
-
-}*/
+.cookie-banner{
+
+    position:fixed;
+    
+    bottom:20px;
+    
+    left:50%;
+    
+    transform:translateX(-50%);
+    
+    width:min(92%,650px);
+    
+    background:rgba(247,244,235,.97);
+    
+    border:2px solid #d6c28a;
+    
+    border-radius:22px;
+    
+    padding:18px 22px;
+    
+    display:flex;
+    
+    justify-content:space-between;
+    
+    align-items:center;
+    
+    gap:20px;
+    
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+    
+    z-index:9999;
+    
+    }
+    
+    .cookie-text h5{
+    
+    margin:0 0 6px;
+    
+    color:#5d6b50;
+    
+    font-family:"Cinzel", serif;
+    
+    }
+    
+    .cookie-text p{
+    
+    margin:0;
+    
+    color:#666;
+    
+    font-size:.95rem;
+    
+    }
+    
+    .cookie-btn{
+    
+    background:#89a36c;
+    
+    color:#fff;
+    
+    border:none;
+    
+    border-radius:50px;
+    
+    padding:10px 26px;
+    
+    cursor:pointer;
+    
+    transition:.3s;
+    
+    }
+    
+    .cookie-btn:hover{
+    
+    background:#6f8854;
+    
+    }
+    
+    @media(max-width:768px){
+    
+    .cookie-banner{
+    
+    flex-direction:column;
+    
+    text-align:center;
+    
+    }
+    
+    }
