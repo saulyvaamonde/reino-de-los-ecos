@@ -128,6 +128,8 @@ setInterval(createLeaf, 800);
 
   /*cookies*/
 
+  document.cookie = "acceptCookies=valorCookie; max-age=86400; path=/; Secure; SameSite=Lax";
+
   document.addEventListener("DOMContentLoaded", () => {
 
     const banner = document.getElementById("cookie-banner");
