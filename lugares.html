@@ -126,6 +126,207 @@ height:85px;
 
 }
 
+/*==================================
+GALERÍA DEL REINO
+==================================*/
+
+.galeria{
+
+padding:90px 0;
+background:linear-gradient(
+180deg,
+#eef5e8,
+#f8f5ef
+);
+overflow:hidden;
+
+}
+
+.titulo-galeria{
+
+text-align:center;
+font-family:"Cinzel", serif;
+color:#5d6b50;
+margin-bottom:10px;
+
+}
+
+.subtitulo-galeria{
+
+text-align:center;
+color:#777;
+margin-bottom:45px;
+
+}
+
+/* Contenedor */
+
+.slider{
+
+width:100%;
+overflow:hidden;
+position:relative;
+
+}
+
+/* Degradado laterales */
+
+.slider::before,
+.slider::after{
+
+content:"";
+position:absolute;
+top:0;
+width:120px;
+height:100%;
+z-index:2;
+pointer-events:none;
+
+}
+
+.slider::before{
+
+left:0;
+
+background:linear-gradient(
+to right,
+#eef5e8,
+transparent
+);
+
+}
+
+.slider::after{
+
+right:0;
+
+background:linear-gradient(
+to left,
+#eef5e8,
+transparent
+);
+
+}
+
+/* Carril */
+
+.slide-track{
+
+display:flex;
+
+width:calc(430px * 6);
+
+animation:scroll 22s linear infinite;
+
+}
+
+/* Pausa al pasar el cursor */
+
+.slider:hover .slide-track{
+
+animation-play-state:paused;
+
+}
+
+/* Tarjetas */
+
+.slide{
+
+width:430px;
+
+margin:0 18px;
+
+flex-shrink:0;
+
+}
+
+/* Imagen */
+
+.slide img{
+
+width:100%;
+
+height:270px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+transition:.45s;
+
+box-shadow:0 12px 35px rgba(0,0,0,.12);
+
+}
+
+/* Hover */
+
+.slide img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 18px 45px rgba(0,0,0,.18);
+
+}
+
+/* Animación */
+
+@keyframes scroll{
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(calc(-430px * 3));
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.slide{
+
+width:280px;
+margin:0 12px;
+
+}
+
+.slide-track{
+
+width:calc(280px * 6);
+
+}
+
+.slide img{
+
+height:180px;
+
+}
+
+@keyframes scroll{
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(calc(-280px * 3));
+
+}
+
+}
+
+}
+
 
 
 .footer{
@@ -498,6 +699,62 @@ data-bs-target="#mapaModal">
         </div>
         
         </div>
+
+
+        <!-- ========= GALERÍA ========= -->
+
+<section class="galeria">
+
+    <div class="container">
+    
+    <h2 class="titulo-galeria">Galería del Reino</h2>
+    
+    <p class="subtitulo-galeria">
+    Recorre algunos de los paisajes más mágicos de Whisper Valley.
+    </p>
+    
+    <div class="slider">
+    
+    <div class="slide-track">
+    
+    <!-- Imágenes -->
+    
+    <div class="slide">
+    <img src="imagenes/galeria1.webp" alt="Galería 1" loading="lazy">
+    </div>
+    
+    <div class="slide">
+    <img src="imagenes/galeria2.webp" alt="Galería 2" loading="lazy">
+    </div>
+    
+    <div class="slide">
+    <img src="imagenes/galeria3.webp" alt="Galería 3" loading="lazy">
+    </div>
+    
+    <!-- Se repiten para crear el efecto infinito -->
+    
+    <div class="slide">
+    <img src="imagenes/galeria1.webp" alt="">
+    </div>
+    
+    <div class="slide">
+    <img src="imagenes/galeria2.webp" alt="">
+    </div>
+    
+    <div class="slide">
+    <img src="imagenes/galeria3.webp" alt="">
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </section>
+
+
+
 
 </section>
        <footer class="footer">
